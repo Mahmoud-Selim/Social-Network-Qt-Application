@@ -13,15 +13,20 @@ class AddComment : public QDialog
 
 public:
     explicit AddComment(QWidget *parent = 0);
+
     ~AddComment();
 
 public slots:
     QString getCommentBody();
+
+
 private slots:
     void on_AddComment_accepted();
 
+
 private:
     Ui::AddComment *ui;
+
     QString commentBody;
 };
 

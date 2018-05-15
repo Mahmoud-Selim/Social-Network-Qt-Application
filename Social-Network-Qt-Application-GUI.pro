@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui printsupport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -27,9 +27,17 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     newaccount.cpp \
-    homepage.cpp \
     profilepage.cpp \
-    addcomment.cpp
+    addcomment.cpp \
+    posts.cpp \
+    comment.cpp \
+    Activity.cpp \
+    user.cpp \
+    fileman.cpp \
+    qcustomplot.cpp \
+    adminwindow.cpp \
+    statistics.cpp \
+    homepage.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -37,12 +45,22 @@ HEADERS += \
     homepage.h \
     profilepage.h \
     addcomment.h \
-    comments.h \
-    posts.h
+    posts.h \
+    comment.h \
+    Activity.h \
+    user.h \
+    fileman.h \
+    qcustomplot.h \
+    adminwindow.h \
+    statistics.h
 
 FORMS += \
         mainwindow.ui \
     newaccount.ui \
     homepage.ui \
     profilepage.ui \
-    addcomment.ui
+    addcomment.ui \
+    adminwindow.ui
+
+RESOURCES += \
+    myresources.qrc
